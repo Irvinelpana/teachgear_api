@@ -1,0 +1,186 @@
+{
+  "info": {
+    "_postman_id": "1f97a0c3-5708-4943-8228-f5663d21eb69",
+    "name": "TechGear_API_OCI",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53378446",
+    "_collection_link": "https://go.postman.co/collection/53378446-1f97a0c3-5708-4943-8228-f5663d21eb69?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Get - Todos los productos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://40.233.3.52:5000/api/v1/producto",
+          "protocol": "http",
+          "host": [
+            "40",
+            "233",
+            "3",
+            "52"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "v1",
+            "producto"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Post -  Crear Producto",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nombre\": \"Mouse Gamer Wireless RGB\",\r\n  \"categoria\": \"Periféricos\",\r\n  \"precio\": 850.00,\r\n  \"stock\": 25,\r\n  \"descripcion\": \"Mouse óptico inalámbrico recargable\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://40.233.3.52:5000/api/v1/producto",
+          "protocol": "http",
+          "host": [
+            "40",
+            "233",
+            "3",
+            "52"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "v1",
+            "producto"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get - Producto por ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://40.233.3.52:5000/api/v1/producto/1",
+          "protocol": "http",
+          "host": [
+            "40",
+            "233",
+            "3",
+            "52"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "v1",
+            "producto",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Put - Actualizar Producto",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"nombre\": \"Teclado Mecánico RGB Switch Red Pro\",\r\n  \"categoria\": \"Teclados\",\r\n  \"precio\": 1350.00,\r\n  \"stock\": 20,\r\n  \"descripcion\": \"Teclado mecánico retroiluminado con switches rojos silenciosos y software dedicado\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://40.233.3.52:5000/api/v1/producto/1",
+          "protocol": "http",
+          "host": [
+            "40",
+            "233",
+            "3",
+            "52"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "v1",
+            "producto",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete - Eliminar Producto",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://40.233.3.52:5000/api/v1/producto/8",
+          "protocol": "http",
+          "host": [
+            "40",
+            "233",
+            "3",
+            "52"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "v1",
+            "producto",
+            "8"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "clientes/direcciones",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"cliente_id\": 1,\r\n  \"calle_numero\": \"Av. Hidalgo #123\",\r\n  \"colonia\": \"Centro\",\r\n  \"ciudad\": \"Gómez Palacio\",\r\n  \"codigo_postal\": \"35000\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://40.233.3.52:5000/api/v1/clientes/direcciones",
+          "protocol": "http",
+          "host": [
+            "40",
+            "233",
+            "3",
+            "52"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "v1",
+            "clientes",
+            "direcciones"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
